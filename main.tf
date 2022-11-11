@@ -1,6 +1,6 @@
 terraform {
   cloud {
-    organization = "nambeohihi"
+    organization = "nambeotest"
     hostname = "app.terraform.io"
 
     workspaces {
@@ -14,12 +14,12 @@ provider "aws" {
 }
 
 module "nambeoec2" {
-  source = "https://app.terraform.io/app/nambeotest/registry/modules/private/nambeotest/nambeoec2/aws/0.0.2"
+  source = "app.terraform.io/nambeotest/nambeoec2/aws"
   subnet = module.nambeovpc.private_subnets
 }
 
 module "namebeovpc" {
-  source = "https://app.terraform.io/app/nambeotest/registry/modules/private/nambeotest/nambeovpc/aws/0.0.2"
+  source = "app.terraform.io/nambeotest/nambeovpc/aws"
   private_subnet_range = var.private_subnet_range
   public_subnet_range = var.private_subnet_range
 }
