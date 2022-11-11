@@ -15,7 +15,7 @@ provider "aws" {
 
 module "nambeoec2" {
   source = "app.terraform.io/nambeotest/nambeoec2/aws"
-  subnet = module.nambeovpc.private_subnets
+  subnet = nambeovpc.private_subnets
 }
 
 module "namebeovpc" {
