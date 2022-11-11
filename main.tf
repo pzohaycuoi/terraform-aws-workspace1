@@ -15,6 +15,5 @@ provider "aws" {
 
 module "namebeovpc" {
   source = "app.terraform.io/nambeotest/nambeovpc/aws"
-  private_subnet_range = var.private_subnet_range
   public_subnet_range = var.private_subnet_range
 }
