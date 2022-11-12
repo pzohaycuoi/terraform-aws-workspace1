@@ -4,8 +4,5 @@ terraform {
       source = "hashicorp/aws"
       version = "4.39.0"
     }
-    aws-vpc = {
-      source = "terraform-aws-modules/vpc/aws"
-    }
   }
 }
