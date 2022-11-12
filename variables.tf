@@ -23,3 +23,8 @@ variable "vpc_azs" {
   description = "availability zone for subnets"
   type = list(any)
 }
+
+variable "project_name" {
+  description = "tag resources with project name for identify"
+  type = string
+}

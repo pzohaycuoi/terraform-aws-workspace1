@@ -20,4 +20,5 @@ module "namebeovpc" {
   vpc_name = var.vpc_name
   vpc_cidr = var.vpc_cidr
   vpc_azs = var.vpc_azs
+  project_name = var.project_name
 }
