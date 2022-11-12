@@ -13,7 +13,7 @@ provider "aws" {
   region = var.region
 }
 
-module "namebeovpc" {
+module "vpc" {
   source = "app.terraform.io/nambeotest/nambeovpc/aws"
   region = var.region
   public_subnet_range = var.public_subnet_range
