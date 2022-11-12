@@ -3,11 +3,11 @@ output "vpc_id" {
 }
 
 output "private_subnet" {
-  value = module.nambeovpc.private_subnets
+  value = module.nambeovpc.private_subnet
 }
 
 output "public_subnet" {
-  value = module.nambeovpc.public_subnets
+  value = module.nambeovpc.public_subnet
 }
 
 output "region" {
